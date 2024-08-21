@@ -1,0 +1,176 @@
+body 
+{
+    font-family: Corbel Light;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+main 
+{
+    padding: 25px;
+}
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    min-width: 825px;
+}
+h1
+{
+    font-size: 20px;
+}
+
+/* Seccion de diseño del cuerpo */
+.diseño1
+{
+    background-color: #e7e5e5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+label
+{
+    display: inline-block;
+    min-width: 145px;
+    font-size: 18px;
+}
+
+/* Seccion de diseño del header */
+header
+{
+    padding: 20px;
+    min-width: 455px;
+}
+#divHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e5e5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    
+}
+.botonHeader 
+{
+    align-items: center;
+    background: linear-gradient(to right, #00f2fe, #00f2fe);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(31, 61, 110);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 150px;   
+}
+
+.botonHeader:hover {
+    transform: scale(1.05);
+}
+
+#welcomeMessage {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin: 10px 0;
+    width: calc(70%);
+}
+#divHeader img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3357cd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 768px) {
+    .diseño1 {
+        flex-direction: column;
+    }
+    .tarjeta {
+        width: 100%;
+    }
+}
+
+.card {
+    margin: 20px auto; /* Center the card */
+    width: 100%; /* Full width */
+    max-width: 1000px; /* Set a max width for larger screens */
+    height: 600px;
+}
+
+.card-body {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add padding for larger body */
+}
+
+.text-content {
+    flex: 1; /* Allow text content to take available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.card-body img {
+    max-width: 500px; /* Increase the max width for a larger image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add some border-radius */
+}
+
+.btn {
+    padding: 10px 50px;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+#botonVolver {
+    padding: 20px 50px; /* Increase top/bottom and left/right padding */
+    font-size: 1.25rem; /* Increase the font size */
+    transition: transform 0.3s ease; /* Add a hover effect*/
+    border-radius: 0px;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.btn-back {
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 0.875rem; /* Smaller font size */
+    background-color: #28a745; /* Bootstrap's green color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.btn-back:hover {
+    background-color: #218838; /* Darker green on hover */
+}

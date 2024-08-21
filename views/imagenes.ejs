@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL 2</title>
+    <link rel="stylesheet" href="../css/inventario.css">
+</head>
+<body>
+    <header>
+        <div id="divHeader">
+            <img src="" alt="Imagen de Usuario" id="imagenUsuario">
+            <div id="welcomeMessage"></div>
+            <button id="botonHome" class="botonHeader">Home</button>
+            <button id="botonInventario" class="botonHeader">Inventario</button>
+            <button id="botonLogout" class="botonHeader">Logout</button>
+        </div>
+    </header>
+    <main>
+        <section id="perfilUsuario" class="diseño1">
+            <form id="registroventas" enctype="multipart/form-data">
+                <fieldset>
+                    <div>
+                        <label for="fotoejem1">Foto de producto:</label>
+                        <img id="fotoSemilla1" src="" alt="Foto de Perfil" width="150" height="150"><br>
+                        <div class="custom-file-container">
+                            <input type="file" name= "inputFotoSemilla1" id="inputFotoSemilla1"  accept="image/*">
+                        </div><br>
+                        <label for="fotoejem2">Foto de producto:</label>
+                        <img id="fotoSemilla2" src="" alt="Foto de Perfil" width="150" height="150"><br>
+                        <div class="custom-file-container">
+                            <input type="file" name= "inputFotoSemilla2" id="inputFotoSemilla2"  accept="image/*">
+                        </div><br>
+                        <label for="fotoejem3">Foto de producto:</label>
+                        <img id="fotoSemilla3" src="" alt="Foto de Perfil" width="150" height="150"><br>
+                        <div class="custom-file-container">
+                            <input type="file" name= "inputFotoSemilla3" id="inputFotoSemilla3"  accept="image/*">
+                        </div><br>
+                    </div>
+                    <div class="botoncontainer">
+                        <input type="submit" value="Registrar imagenes" id="botonima">
+                        <input type="submit" value="Volver" id="botonvuelt">
+                    </div>
+            </form>
+        </section>
+    </main>
+    <script src="../js/imagenes.js"></script>
+</body>
+</html>

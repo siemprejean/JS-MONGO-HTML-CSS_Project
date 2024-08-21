@@ -1,0 +1,120 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Corbel Light;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/imagenSemillas01.jpeg);
+    background-size: cover;
+}
+
+main, header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    padding: 5px;
+}
+
+fieldset{
+    border: 3.5px solid #3357cd;
+    border-radius: 9px;
+    padding: 20px;
+    position: relative;
+    opacity: 1;
+}
+
+legend{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3357cd;
+    padding: 20px 10px;
+    opacity: 1;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+#divSubmit{
+display: flex;
+align-items: center;
+}
+
+form label {
+    display: inline-block;
+    min-width: 200px;
+}
+
+.diseño1 {
+    background-color: rgba(231, 229, 229, 0.81);
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    max-width: 900px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 250px;
+    height: 15px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 9px;
+    font-size: 20px;
+    font-family: Corbel Light, Arial, sans-serif;
+    opacity: 1;
+}
+
+#botonSubmit {
+    width: 250px;
+    padding: 5px 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 9px;
+    background-color: #3357cd; 
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+}
+#botonVolver{
+    width: 250px;
+    padding: 5px 5px;
+    margin: 10px;
+    border: none;
+    border-radius: 9px;
+    background-color: #3357cd; 
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif; 
+}
+
+/* Cambiamos los colores de fondo cuando se pasa el mouse sobre los diferentes elementos. */
+button:hover {
+    background-color: #1c3eab;
+}
+#botonSubmit:hover{
+    background-color: #2b48a8;
+}

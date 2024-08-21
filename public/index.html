@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABORATORIO 5 - LOGIN</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <main>
+        <section id="formulario" class="diseño1">
+            <form id="formularioLogin">
+                <fieldset id="fieldsetLogin">
+                    <legend>LOGIN DE USUARIO</legend>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required><br><br>
+                    <label for="contra">Contraseña:</label>
+                    <input type="password" id="contra" name="contra" required><br><br>
+                </fieldset>
+                
+                <div>
+                    <button type="submit" id="botonLogin">Login</button>  
+                    <button type="button" id="botonRegistro">Registro</button>
+                </div>
+                
+                <div id="mensaje">
+                    <h4 id="error"></h4>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+</html>

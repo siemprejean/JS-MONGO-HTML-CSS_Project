@@ -1,0 +1,29 @@
+{
+  "name": "proyectofinal",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.5",
+    "multer": "^1.4.5-lts.1"
+  },
+  "version": "1.0.0",
+  "description": "bd:                 cosechAppDB usuario de DB:      DesIX2024 contraseña de DB:   7sgYjEz2KZXuHmr4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

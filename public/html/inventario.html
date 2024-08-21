@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/inventario.css">
+</head>
+<body>
+    <header class="bg-light p-3 shadow-sm">
+        <div id="divHeader" class="d-flex justify-content-between align-items-center">
+            <img src="" alt="Imagen de Usuario" id="imagenUsuario" class="rounded-circle shadow-sm">
+            <div id="welcomeMessage"></div>
+            <div>
+                <button id="botonHome" class="btn btn-primary">Home</button>
+                <button id="botonPerfil" class="btn btn-secondary">Perfil</button>
+                <button id="botonLogout" class="btn btn-danger">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main class="container mt-4">
+        <section id="formularioInventario" class="card p-3 mb-4">
+            <form id="registroLoteSemillas" enctype="multipart/form-data">
+                <fieldset class="border p-3 rounded">
+                    <legend class="w-auto p-2">REGISTRO DE NUEVO LOTE DE SEMILLAS</legend>
+                    <div class="form-row">
+                        <div>
+                            <input type="text" id="Lote" name="Loteproducto" class="form-control" readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fechaRegistro">Fecha de Registro:</label>
+                            <input type="date" id="fechaRegistro" name="fechaRegistro" class="form-control" readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="nombreSemilla">Nombre de la Semilla:</label>
+                            <input type="text" id="nombreSemilla" name="nombreSemilla" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="variedad">Variedad:</label>
+                            <input type="text" id="variedad" name="variedad" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="cantidad">Cantidad (en kg):</label>
+                            <input type="number" id="cantidad" name="cantidad" class="form-control" step="0.01" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="origen">Origen:</label>
+                            <input type="text" id="origen" name="origen" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="fechaCosecha">Fecha de Cosecha:</label>
+                            <input type="date" id="fechaCosecha" name="fechaCosecha" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="mensajePromocional">Mensaje promocional:</label>
+                            <textarea id="mensajePromocional" name="mensajePromocional" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="fotoejem1">Foto de producto:</label>
+                            <img id="fotoSemilla1" src="" alt="Foto de Perfil" width="150" height="150" class="d-block mb-3">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputFotoSemilla1" name="image" accept="image/*">
+                                <label class="custom-file-label" for="inputFotoSemilla1">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="text-center">
+                    <input type="submit" value="Registrar Lote" id="botonSubmit" class="btn btn-primary mt-3">
+                </div>
+            </form>
+            <div id="mensaje"><h3></h3></div>
+        </section>
+        <section id="tablaMovimientos" class="card p-3 mb-4">
+            <fieldset class="border p-3 rounded">
+                <legend class="w-auto p-2">STOCK DE SEMILLAS</legend>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>No. Lote</th>
+                                <th>Fecha Reg.</th>
+                                <th>Nombre</th>
+                                <th>Variedad</th>
+                                <th>Cant. Reg.</th>
+                                <th>Origen</th>
+                                <th>Fecha Cosecha</th>
+                                <th>Descripcion</th>
+                                <th>Stock (kg)</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaBody">
+                        </tbody>
+                    </table>
+                </div>
+            </fieldset>
+        </section>
+        <section id="porcentajeMovimientos" class="card p-3 mb-4">
+            <h1>PORCENTAJE DE MOVIMIENTOS</h1>
+            <div class="progress">
+                <div class="progress-bar" style="width:100%; background-color:white;"></div>
+            </div>
+        </section>
+    </main>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/inventario.js"></script>
+</body>
+</html>

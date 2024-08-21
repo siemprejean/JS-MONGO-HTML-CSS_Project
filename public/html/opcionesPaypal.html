@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/opcionesPaypal.css">
+    <title>Opciones de Suscripción</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=AW9tlRmNeIhaj7XLVAtSZSZHAhepRUigp1juCKr7G5qVaVViQWICRCuTKKqmGzPuszRztdSjQRu7b4kl&components=buttons,messages,card-fields,funding-eligibility"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>OPCIONES DE PAGO</h1>
+        <h2>No tienes un plan activo, adquiere un plan para poder publicar tus anuncios.</h2>
+        
+        <div class="card">
+            <h2>Plan de 30 días</h2>
+            <p><strong>Descripción:</strong> Suscripción con una duración de 30 días y 25 publicaciones</p>
+            <p><strong>Precio:</strong> $30</p>
+            <p><strong>Duración:</strong> 30 días</p>
+            <p><strong>Máximo Publicaciones:</strong> 25</p>
+            <div id="paypal-button-mensual"></div>
+        </div>
+
+        <div class="card">
+            <h2>Publicación Única</h2>
+            <p><strong>Descripción:</strong> Una única publicación de semilla</p>
+            <p><strong>Precio:</strong> $3</p>
+            <p><strong>Duración:</strong> 1 día</p>
+            <p><strong>Máximo Publicaciones:</strong> 1</p>
+            <div id="paypal-button-unico"></div>
+        </div>
+
+        <button class="cancel-button" id="btnCancelar">Cancelar</button>
+    </div>
+    
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <div><p>¿Estás seguro de que deseas cancelar?</p></div>
+            <button id="cancelarProceso" class="botonCancel">Sí, cancelar</button>
+            <button id="cerrarModal" class="botonContinue">No, continuar</button>
+        </div>
+    </div>
+    
+
+    <script src="../js/opcionesPaypal.js"></script>
+    <script src="../js/modalCancel.js"></script>
+</body>
+</html>
+
+
+
+
+

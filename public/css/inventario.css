@@ -1,0 +1,325 @@
+body {
+    font-family: Corbel Light;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../imagenes/imagenSemillas01.jpeg);
+    background-size: cover;
+}
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    min-width: 825px;
+}
+input
+{
+    width: 220px;
+    height: 12px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Corbel Light, Arial, sans-serif;
+}
+textarea
+{
+    width: 220px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Corbel Light, Arial, sans-serif;
+}
+
+/* Seccion de diseño del cuerpo */
+main 
+{
+    padding: 25px;
+}
+.divBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.divBlock > div {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    .divBlock {
+        flex-direction: column;
+    }
+
+    .divBlock > div {
+        margin: 0 auto;
+        min-width: 100%;
+    }
+}
+.diseño1
+{
+    background-color: rgba(231, 229, 229, 0.83);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    overflow: hidden;
+}
+fieldset{
+    border: 3.5px solid #3357cd;
+    border-radius: 9px;
+    padding: 20px;
+    margin: 15px 10px 15px 10px;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+legend{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3357cd;
+    padding: 20px 10px;
+    border-radius: 4px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.botonCentro {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+label
+{
+    display: inline-block;
+    min-width: 150px;
+    font-size: 15px;
+}
+.boton{
+    align-items: center;
+    background: #3357cd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+    height: 35px;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 68px;
+}
+.boton:hover
+{
+    transform: scale(1.05);
+}
+#botonSubmit, #botonima, #botonvuelt
+{
+    align-items: center;
+    background: #3357cd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 1.0em;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+    height: 35px;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 250px;
+}
+
+#botonSubmit:hover, #botonvuelt:hover, #botonima:hover
+{
+    transform: scale(1.05);
+}
+
+/*diseño de tabla*/
+.divTabla
+{
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+            font-size: 15px;
+            table-layout: auto;
+            text-overflow: ellipsis;
+        }
+        th {
+            background-color: #6c7ae0;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        td {
+            white-space: normal;
+        }
+        th, td {
+            border-bottom: 1px solid #dddddd;
+            padding: 10px;
+            text-align: center;
+            max-width: 200px;
+        }
+        th:first-child, td:first-child {
+            border-left: none;
+        }
+
+        th:last-child, td:last-child {
+            border-right: none;
+        }
+
+        th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: 8px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 8px;
+        }
+
+/* Seccion de diseño del header */
+header
+{
+    padding: 25px 25px 0px 25px;
+    min-width: 455px;
+}
+#divHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e5e5;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    
+}
+.botonHeader 
+{
+    align-items: center;
+    background: linear-gradient(to right, #00f2fe, #00f2fe);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(31, 61, 110);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 150px;   
+}
+
+.botonHeader:hover {
+    transform: scale(1.05);
+}
+
+#welcomeMessage {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-left: -10px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    width: calc(70%);
+}
+img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3357cd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Diseño de barra de porcentajes */
+.barra {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.barraCandidato {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.botoncontainer{
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: center; /* Distribute items evenly with space in between */
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Add a hover effect */
+    margin-right: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+button:disabled {
+    display: none; /* Completely hides the button */
+    /* Alternatively, you could use visibility: hidden; to hide it while taking up space */
+}
+
+#Lote {
+    display: none;
+}
+
+

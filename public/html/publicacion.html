@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/publicacion.css">
+</head>
+<body>
+    <header>
+        <div id="divHeader" class="d-flex justify-content-between align-items-center p-3 bg-light">
+            <img src="" alt="Imagen de Usuario" id="imagenUsuario" class="rounded-circle" width="50">
+            <div id="welcomeMessage"></div>
+            <button id="botonPerfil" class="btn btn-primary">Perfil</button>
+            <button id="botonLogout" class="btn btn-danger">Logout</button>
+        </div>
+    </header>
+    <main class="container mt-6">
+        <h3 class="text-center mb-6">Detalles del Producto</h3>
+        <div class="card">
+            <div class="card-body">
+                <div class="text-content">
+                <p><strong>Nombre de Producto:</strong> <span id="nombreSemilla"></span></p>
+                <p><strong>Variedad:</strong> <span id="variedad"></span></p>
+                <p><strong>Cantidad:</strong> <span id="cantidad"></span></p>
+                <p><strong>Origen:</strong> <span id="origen"></span></p>
+                <p><strong>Fecha de Cosecha:</strong> <span id="fechaCosecha"></span></p>
+                <p><strong>Descripcion:</strong> <span id="mensaje"></span></p>
+                </div>
+            <img src="https://images.unsplash.com/photo-1720877851762-1fd589e96311?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagen de Producto" class="img-fluid">
+            </div>
+            <button id="botonVolver" class="btn btn-back">Volver</button>
+        </div>
+    </main>
+    <script src="../js/publicacion.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

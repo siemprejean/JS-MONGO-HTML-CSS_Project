@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARCIAL 2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/ejs.css">
+</head>
+<body>
+    <header class="bg-light p-3">
+        <div id="divHeader" class="d-flex justify-content-between align-items-center">
+            <img src="https://robohash.org/.png" alt="Imagen de Usuario" id="imagenUsuario" class="rounded-circle" width="50">
+            <div id="welcomeMessage" class="ml-3"></div>
+            <div>
+                <button id="botonHome" class="btn btn-primary">Home</button>
+                <button id="botonInventario" class="btn btn-secondary">Inventario</button>
+                <button id="botonLogout" class="btn btn-danger">Logout</button>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container mt-5">
+        <section id="perfilUsuario" class="card">
+            <div class="card-body">
+                <form id="formulariofoto" enctype="multipart/form-data">
+                    <fieldset class="form-group">
+                        <legend class="sr-only">Actualizar Foto de Perfil</legend>
+                        <div class="mb-3">
+                            <label for="fotoPerfil" class="form-label">Foto de perfil:</label>
+                            <input type="file" name="image" id="fotoPerfil" class="form-control">
+                        </div>
+                    </fieldset>
+                    <div id="imagenUsuarioContainer" class="d-flex justify-content-center mb-3">
+                        <img src="" alt="Imagen de Usuario" id="imagenperfil" class="img-fluid">
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <button type="submit" id="botonfoto" class="btn btn-success">Actualizar Foto</button>
+                        <button type="button" id="botonvolv" class="btn btn-secondary">Volver</button>
+                    </div>
+                    <div id="mensaje" class="mt-3">
+                        <h4 id="error" class="text-danger"></h4>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/ejs.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

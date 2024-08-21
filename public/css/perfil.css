@@ -1,0 +1,394 @@
+/* Global */
+body {
+    font-family: Corbel Light, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagenes/imagenSemillas01.jpeg);
+    background-size: cover;
+    
+}
+
+h1 {
+    font-size: 20px;
+}
+
+input, select {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: Corbel Light, Arial, sans-serif;
+    padding: 7px;
+}
+
+input {
+    font-size: 12px;
+    height: 12px;
+    width: 200px;
+}
+
+select {
+    font-size: 14px;
+    height: 30px;
+    padding: 2px;
+    width: 220px;
+}
+
+/* estilo de Encabezado */
+header {
+    min-width: 622px;
+    padding: 20px;
+}
+
+#divHeader {
+    align-items: center;
+    background-color: rgba(231, 229, 229, 0.83);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonHeader {
+    align-items: center;
+    background: linear-gradient(to right, #00f2fe, #00f2fe);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(31, 61, 110);
+    cursor: pointer;
+    display: flex;
+    font-family: Corbel Light, Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 150px;
+}
+
+.botonHeader:hover {
+    transform: scale(1.10);
+}
+
+#welcomeMessage {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-left: -10px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    width: calc(70% - 20px);
+}
+
+img {
+    background-color: beige;
+    border: 2px solid #3357cd;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 75px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 75px;
+}
+
+img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+/* estilo del main */
+main {
+    min-width: 600px;
+    padding: 20px;
+}
+
+.diseño1 {
+    background-color: rgba(231, 229, 229, 0.83);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    min-width: 600px;
+    padding: 10px;
+}
+
+/* estilo del formulario perfil */
+#formularioPerfil{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos {
+    flex-direction: column;
+    padding: 20px;
+}
+
+fieldset {
+    border: 3.5px solid #3357cd;
+    border-radius: 12px;
+    display:flex;
+    opacity: 1;
+    padding: 5px;
+}
+
+legend {
+    border-radius: 4px;
+    color: #3357cd;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0 auto;
+    opacity: 1;
+    padding: 5px 10px;
+}
+
+label {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    min-width: 160px;
+}
+
+.boton {
+    background: #3357cd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-family: Corbel Light, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 10px;
+    transition: transform 0.3s ease;
+    width: 250px;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+}
+
+#botonSubmit:hover {
+    transform: scale(1.05);
+}
+
+/* estilo de la tabla*/
+.divTabla {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 19px;
+    overflow: hidden;
+    width: 90%;
+}
+
+th {
+    background-color: #6c7ae0;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+th, td {
+    border-bottom: 1px solid #dddddd;
+    padding: 15px;
+    text-align: left;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+th:first-child {
+    border-top-left-radius: 8px;
+}
+
+th:last-child {
+    border-top-right-radius: 8px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+/* estilo de la barra de porcentajes */
+.barra {
+    background-color: #f3f3f3;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    height: 30px;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.barraCandidato {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    height: 100%;
+    justify-content: center;
+}
+
+/* estilo de imagen de perfil */
+#inputFotoPerfil {
+    background: #3357cd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-family: Corbel Light, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 10px 20px 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.custom-file-container {
+    display: inline-block;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-file-label {
+    background-color: #3357cd;
+    border: 2px solid #3357cd;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Corbel Light, Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.custom-file-label:hover {
+    background-color: #2a46a2;
+    transform: scale(1.05);
+}
+
+#fotoPerfil {
+    border: 2px solid #3357cd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 0 auto 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fotoPerfil:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+/* otros  */
+#divFooter {
+    background-color: #e7e5e5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    padding: 10px;
+}
+
+#divDespedida {
+    color: #3357cd;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#cambiarfotoperfil {
+    display: block;
+    margin: 0 auto; /* Esto centra horizontalmente el botón */
+    /* Añade más estilos según sea necesario */
+}
+
+#imagenUsuarioContainer {
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: 500px; /* Ajusta el tamaño según sea necesario */
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+#imagenUsuario {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#imagenperfil {
+    width: 400px; /* Ajusta el tamaño según sea necesario */
+    height: 400px; /* Ajusta el tamaño según sea necesario */
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Add a hover effect */
+    margin-right: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space out the buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+}
+
+.btn-success {
+    margin-right: 30px; /* Increased space to the right */
+}
+
+.btn-info {
+    margin-left: 30px; /* Increased space to the left */
+}

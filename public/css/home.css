@@ -1,0 +1,216 @@
+body 
+{
+    font-family: Corbel Light;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+main 
+{
+    padding: 25px;
+}
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    min-width: 825px;
+}
+h1
+{
+    font-size: 20px;
+}
+
+/* Seccion de diseño del cuerpo */
+.diseño1
+{
+    background-color: #e7e5e5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+label
+{
+    display: inline-block;
+    min-width: 145px;
+    font-size: 18px;
+}
+
+/* Seccion de diseño del header */
+header
+{
+    padding: 20px;
+    min-width: 455px;
+}
+#divHeader
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e5e5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.39);
+    
+}
+.botonHeader 
+{
+    align-items: center;
+    background: linear-gradient(to right, #00f2fe, #00f2fe);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: rgb(31, 61, 110);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 150px;   
+}
+
+.botonHeader:hover {
+    transform: scale(1.05);
+}
+
+#welcomeMessage {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin: 10px 0;
+    width: calc(78%);
+}
+#divHeader img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: beige;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3357cd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 768px) {
+    .diseño1 {
+        flex-direction: column;
+    }
+    .tarjeta {
+        width: 100%;
+    }
+}
+
+.tarjeta {
+    width: 25%;
+    margin: 20px;
+    min-width: 550px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imagen en la tarjeta */
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px; /* Altura máxima para la imagen */
+}
+
+/* Contenido de la tarjeta */
+.tarjeta .contenido {
+    padding: 15px;
+}
+
+/* Estilos para el título */
+.tarjeta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 5px;
+}
+
+.tarjeta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Estilos para los detalles */
+.tarjeta p {
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Botón para ver detalles */
+.tarjeta .boton-ver {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tarjeta .boton-ver:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+    display: none;
+}
+
+#ver
+{
+    align-items: center;
+    background: #3357cd;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    cursor: pointer;
+    font-size: 1.0em;
+    font-weight: bold;
+    font-family: Corbel Light, Arial, sans-serif;
+    height: 35px;
+    justify-content: center;
+    margin: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    width: 250px;
+}
+
+#ver:hover
+{
+
+    transform: scale(1.05);
+}
+
+.btn {
+    padding: 10px 30px;
+    font-size: 1.25rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease; /* Add a hover effect */
+    margin-right: 5px;
+}
